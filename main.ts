@@ -23,10 +23,14 @@ const helpers = {
 };
 
 async function main() {
-    const args = parseArgs(Deno.args.slice(1));
+    const args = parseArgs(Deno.args);
+    
+    async function writeErr(msg: string) { 
+    	return await Deno.stderr.write(encoder.encode(msg)); 
+    }
 
     if (args['help'] || args['h'] || args['?'] || args['\\?']) {
-        await Deno.stderr.write(encoder.encode("TODO: Provide help."));
+        await writeErr("TODO: Provide help.");
         return;
     }
 
@@ -35,16 +39,16 @@ async function main() {
 
     let o = args['o'] || args['output'];
     if (!hbs || !(await exists(hbs as string))) {
-        Deno.stderr.writeSync(encoder.encode("ERROR: Please provide a single .hbs template file.\n"));
+        await writeErr("ERROR: Please provide a single .hbs template file.\n");
         return;
     }
     if (!json || !(await exists(json as string))) {
-        Deno.stderr.writeSync(encoder.encode("ERROR: Please provide a single .json data file.\n"));
+        await writeErr("ERROR: Please provide a single .json data file.\n");
         return;
     }
     if (!o) {
         o = (hbs as string).replace(/\.hbs$/, '');
-        Deno.stderr.writeSync(encoder.encode(`WARNING: No output path set, using default path: ${o}.\n`));
+        await writeErr(`WARNING: No output path set, using default path: ${o}.\n`);
     }
     
 
