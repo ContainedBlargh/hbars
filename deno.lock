@@ -43,6 +43,15 @@
     "https://deno.land/std@0.221.0/cli/mod.ts": "3ac44ca5def1b8cc1089a748d4904de8aa80fd89aa16a5d0bebee9cdcbdadba1",
     "https://deno.land/std@0.221.0/cli/parse_args.ts": "5250832fb7c544d9111e8a41ad272c016f5a53f975ef84d5a9fe5fcb70566ece",
     "https://deno.land/std@0.221.0/cli/prompt_secret.ts": "f6c9416b261131ac0df7ec4c57d4dc3aac7566b8a840a2d4388f8b7424f57b22",
-    "https://deno.land/std@0.221.0/cli/spinner.ts": "cf873605771270b4324cc063b5031ab250d8efee8799e45e1a3bfdd333ff721d"
+    "https://deno.land/std@0.221.0/cli/spinner.ts": "cf873605771270b4324cc063b5031ab250d8efee8799e45e1a3bfdd333ff721d",
+    "https://deno.land/std@0.221.0/datetime/_date_time_formatter.ts": "b810c4c0d8f7aafe765fb963efdbf704acceb0730f5b242a7ec46df37834307c",
+    "https://deno.land/std@0.221.0/datetime/constants.ts": "5df80a84e301da6db5793804122c034d2d090da31f1e1c5fdaa831fc70a45da7",
+    "https://deno.land/std@0.221.0/datetime/day_of_year.ts": "f46216f0e87277c7c2a92eb3bdf9414803f7d19706c137a7d70f3d596d3a2ce1",
+    "https://deno.land/std@0.221.0/datetime/difference.ts": "7580464beb74be6d2e87fb1a2f0aa338e543758c0b2ab18c8a42ea451a6c8a31",
+    "https://deno.land/std@0.221.0/datetime/format.ts": "8709d992917f490a99c9d625c8283b1f396ce8a56d1308b46435332b46f876e0",
+    "https://deno.land/std@0.221.0/datetime/is_leap.ts": "07b59c0900d20915737f5252c0d49929fcb0f5b79f4906918014ad44c0011a58",
+    "https://deno.land/std@0.221.0/datetime/mod.ts": "92df8f9c33d0b981e7e1e0d1d5d28b574da98b414e01bd36e35c9839482ef3f1",
+    "https://deno.land/std@0.221.0/datetime/parse.ts": "edd428e573e57bfccfd326c91150828cca7a96b2acb7e4b67a20a85152474845",
+    "https://deno.land/std@0.221.0/datetime/week_of_year.ts": "844d8c95acfd7c9679b13296bc4ba1923edc8b79f8a07e3df4660b9a0f3eb81e"
   }
 }
